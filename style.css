@@ -5,25 +5,26 @@
 
 body{
     font-family: sans-serif;
-    font-size: 16px;
+    font-size: 18px;
     font-weight: normal;
+    line-height: 1.5;
 }
 
 .main-header{
     width:100%;
     background: -webkit-linear-gradient(90deg, #f8d2c7,#ed9277,#995e4d);
 background: linear-gradient(90deg, #f8d2c7,#ed9277,#995e4d);
-    height:200px;
+    height:400px;
     position: relative;
 }
 .photo{
-    width:150px;
-    height:150px;
+    width:180px;
+    height:180px;
     background:url("./photo.jpg") no-repeat center/cover;
     border-radius: 50%;
     position: absolute;
-    top:calc(100% - 80px);
-    left:calc(50% - 75px);
+    top:calc(100% - 90px);
+    left:calc(50% - 90px);
 
 }
 .content{
@@ -34,7 +35,7 @@ background: linear-gradient(90deg, #f8d2c7,#ed9277,#995e4d);
 }
 
 .dark{
-    background-color: #f8d2c7;
+    background-color: #FBE2DB;
 }
 
 .light{
@@ -42,7 +43,75 @@ background: linear-gradient(90deg, #f8d2c7,#ed9277,#995e4d);
 }
 section{
     width:100%;
-padding:80px;
+padding:120px 80px;
 box-sizing: border-box;
 
 }
+.section-block{
+    width:50%;
+    margin:20px auto;
+    text-align: left;
+}
+h2{
+    margin-bottom: 20px;
+    text-align: center;
+}
+h1{
+    margin-bottom: 20px;
+    font-size: 30px;
+    text-align: center;
+
+}
+.list{
+    text-align: left;
+ width:700px;   
+ margin: auto;
+}
+.list li {
+    line-height: 2.0;
+}
+
+.timeline {
+    margin: 20px auto;
+    padding: 20px;
+      }
+  
+  .outer {
+    border-left: 2px solid #F5B2A3;
+  }
+  
+  /* Card container */
+  .card {
+    position: relative;
+    margin: 0 0 20px 40px;
+    padding: 10px;
+    background: #fff;
+    border-radius: 8px;
+    -webkit-box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
+-moz-box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
+box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
+  }
+  
+  /* Information about the timeline */
+  .info {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  /* Title of the card */
+  .title {
+    position: relative;
+  }
+  
+  /* Timeline dot  */
+  .title::before {
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background: white;
+    border-radius: 999px;
+    left: -60px;
+    border: 3px solid #F5B2A3;
+  }
